@@ -23,7 +23,7 @@
         "format": "prettier --write \"**/*.js\" \"**/*.json\"",
         "lint": "eslint .",
         "prepublishOnly": "yarn run lint",
-        "preversion": "yarn run lint",
+        "preversion": "yarn run test",
         "postversion": "git push && git push --tags",
         "test": "jest && yarn run lint"
     },
